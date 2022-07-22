@@ -3,28 +3,22 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane prefHeight="237.0" prefWidth="473.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18">
-   <children>
-      <VBox layoutY="7.0" prefHeight="231.0" prefWidth="473.0">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18">
+   <content>
+      <VBox prefHeight="383.0" prefWidth="588.0">
          <children>
             <MenuBar>
               <menus>
-                <Menu mnemonicParsing="false" text="Registration">
+                <Menu fx:id="Registration" mnemonicParsing="false" text="Registration">
                   <items>
-                        <MenuItem mnemonicParsing="false" text="Seller" />
-                    <MenuItem mnemonicParsing="false" text="Departament" />
+                    <MenuItem fx:id="Seller" mnemonicParsing="false" text="Seller" />
+                        <MenuItem fx:id="Departament" mnemonicParsing="false" text="Departament" />
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="about">
                   <items>
                     <MenuItem mnemonicParsing="false" text="About" />
                   </items>
@@ -33,5 +27,5 @@
             </MenuBar>
          </children>
       </VBox>
-   </children>
-</AnchorPane>
+   </content>
+</ScrollPane>
